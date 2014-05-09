@@ -7,15 +7,12 @@ class Card
   end
 end
 
-
 class Deck
   attr_accessor :cards
 
   def initialize ()
-  @cards = []
-  @suits = ["diamonds", "clubs", "hearts", "spades"]
-
-
+    @cards = []
+    @suits = ["diamonds", "clubs", "hearts", "spades"]
     @suits.each do |suit|
       13.times do |rank|
         @cards << Card.new(suit, rank)

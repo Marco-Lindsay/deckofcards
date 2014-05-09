@@ -6,9 +6,7 @@ class Card
     @rank = rank
   end
 
-
 end
-
 
 class Deck < Array
   attr_accessor :cards
@@ -24,7 +22,3 @@ class Deck < Array
   end
 
 end
-
-
-
-
